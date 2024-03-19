@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Module for asynchronous coroutine basics
+Module function for asynchronous coroutine basics
 """
 import asyncio
 import random
@@ -9,7 +9,7 @@ import random
 async def wait_random(max_delay: int = 10) -> float:
     """
     Asynchronous coroutine that waits for a random delay
-    between 0 and max_delay seconds and eventually returns it.
+    between 0 and max_delay seconds and returns it.
     """
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
